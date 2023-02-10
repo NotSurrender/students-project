@@ -4,7 +4,8 @@
 }
 
 body {
-  width: 1280px;
+  max-width: 1280px;
+  margin: auto;
 }
 
 ul {
@@ -18,6 +19,10 @@ h3 {
   margin-top: 10px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header,
 .nav,
 .nav-items {
@@ -25,20 +30,26 @@ h3 {
 }
 
 .header {
+  flex-wrap: wrap;
+  max-width: 1170px;
+  min-height: 108px;
+  padding-left: 55px;
+  padding-right: 20px;
   justify-content: space-between;
-  text-transform: uppercase;
+}
+
+.nav {
+  align-items: center;
+  column-gap: 50px;
 }
 
 .nav-items {
   column-gap: 30px;
-  margin-top: 45px;
-  margin-left: 400px;
-  margin-bottom: 45px;
+  text-transform: uppercase;
 }
 
 .logo {
   margin-top: 20px;
-  margin-left: 55px;
   margin-bottom: 20px;
 }
 
@@ -48,53 +59,64 @@ h3 {
   background: url(images/icon.svg) center no-repeat;
   border: 1px #00C6BD solid;
   border-radius: 100px;
-  margin: 36px 55px 36px 40px;
 }
 
-h1 {
-  color: #163152;
+.main {
+  margin: auto;
+}
+
+.title {
+  margin-top: 60px;
   margin-left: 70px;
+  color: #163152;
   text-transform: uppercase;
   font-style: italic;
-  margin-left: 125px;
-  margin-bottom: 40px;
+}
+
+.background-section {
+  max-width: 1170px;
+  height: 466px;
+  margin: 40px auto 0 auto;
+  background: url(images/photo1.jpg) center no-repeat;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .first-content {
-  display: grid;
-  grid-template-columns: 400px 600px;
-  margin-top: 120px;
-  margin-left: 120px;
-
-}
-
-h1+img {
-  margin-left: 55px;
+  max-width: 1030px;
+  margin: 120px auto 0 auto;
+  justify-content: center;
+  column-gap: 30px;
 }
 
 .second-content {
-  display: grid;
-  grid-template-columns: 600px 400px;
-  margin-top: 100px;
-  margin-left: 125px;
+  max-width: 1030px;
+  margin: 120px auto 0 auto;
+  justify-content: center;
+  column-gap: 30px;
 }
 
 .content2 {
-  margin-left: 30px;
   text-align: right;
 }
 
 .about {
   margin-top: 20px;
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .third-content {
-  display: grid;
-  grid-template-columns: 600px 400px;
   margin-top: 120px;
   margin-left: 55px;
+  column-gap: 100px;
 }
 
 .contacts {
-  margin-left: 150px;
+
 }
